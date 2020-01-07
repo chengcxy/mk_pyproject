@@ -71,7 +71,6 @@ python3 gen_json_file.py Bpoint
 
 # 五.配置文件参数
 
-```
 |参数|参数注释
 |---|---
 |project_name|项目名称
@@ -83,7 +82,7 @@ python3 gen_json_file.py Bpoint
 |project_desc|项目描述 填写后会自动渲染到README.md
 |python_version|python版本信息 填写后会自动渲染到README.md
 |其他参数|python版本信息 填写后会自动渲染到README.md >三.其他信息下
-```
+
 
 # 六.将该工具安装为命令行工具 以后可通过复制配置文件 创建项目
 
