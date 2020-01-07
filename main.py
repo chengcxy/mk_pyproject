@@ -10,9 +10,7 @@ def main(json_file):
     obj = MakeTemplate.from_json_file(json_file=json_file)
     obj.run()
 
-def main(json_file):
-    obj = MakeTemplate(project_name)
-    obj.run()
+
 
 if __name__ == '__main__':
     args = sys.argv
