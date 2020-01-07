@@ -11,11 +11,6 @@ from codecs import open
 import os
 
 
-here = os.path.abspath(os.path.dirname(__file__))
-
-# Get the long description from the README.md file
-with open(os.path.join(here, 'README.md'), encoding='utf-8') as f:
-    long_description = f.read()
 
 
 setup(
@@ -29,19 +24,17 @@ setup(
     description=(
         'create Python Project Template'
     ),
-    long_description=long_description,
-    author='chengcxy',
+    long_description=open('README.md').read(),
+    long_description_content_type="text/markdown",
+    author='chengxinyao',
     author_email='chengxinyao1991@163.com',
-    license='other',
+    license='MIT',
+    url='https://github.com/chengcxy/mk_pyproject',
 
     # See https://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[
-        # How mature is this project? Common values are
-        #   3 - Alpha
-        #   4 - Beta
-        #   5 - Production/Stable
         'Development Status :: 3 - Alpha',
-        'License :: Other/Proprietary License',
+        'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
@@ -51,6 +44,7 @@ setup(
     ],
 
     keywords='python project structures',
+    platforms = 'any',
 
     # You can just specify the packages manually here if your project is
     # simple. Or you can use find_packages().
