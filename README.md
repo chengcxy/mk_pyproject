@@ -1,7 +1,7 @@
 # 一.项目模板生成工具
-1.1 所有Python开发项目统一放到指定目录 比如(我的都放在这个目录 /Users/chengxinyao/DataWarehouse/PythonProjects 使用该工具时候 json_file里targer_parent_dir参数保持一致)
-1.2 每个项目最好用统一的模板生成，防止各个项目都是不同的风格，维护起来心累
-1.3 通过该工具可快速启动新项目 通过配置文件生成项目开发文档README.md等
+1.1. 所有Python开发项目统一放到指定目录 比如(我的都放在这个目录 /Users/chengxinyao/DataWarehouse/PythonProjects 使用该工具时候 json_file里targer_parent_dir参数保持一致)
+1.2. 每个项目最好用统一的模板生成，防止各个项目都是不同的风格，维护起来心累
+1.3. 通过该工具可快速启动新项目 通过配置文件生成项目开发文档README.md等
 
 # 二.目录结构实例,可通过配置文件定义,比如创建的logstreaming项目
 
