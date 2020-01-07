@@ -10,9 +10,6 @@ from setuptools import setup
 from codecs import open
 import os
 
-
-
-
 setup(
     name='mk_pyproject',
 
@@ -34,6 +31,7 @@ setup(
     # See https://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[
         'Development Status :: 3 - Alpha',
+        'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.3',
@@ -41,14 +39,15 @@ setup(
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
+        'Topic :: Software Development :: Libraries :: Python Modules',
     ],
 
     keywords='python project structures',
-    platforms = 'any',
+    platforms='any',
 
     # You can just specify the packages manually here if your project is
     # simple. Or you can use find_packages().
-    packages=["mk_pyproject",'example','version'],
+    packages=["mk_pyproject", 'example', 'version'],
     install_requires=[
     ],
     extras_require={
