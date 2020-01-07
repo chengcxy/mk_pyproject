@@ -81,7 +81,7 @@ python3 gen_json_file.py Bpoint
 |project_modules|项目的模块列表 可自定义
 |project_desc|项目描述 填写后会自动渲染到README.md
 |python_version|python版本信息 填写后会自动渲染到README.md
-|其他参数|python版本信息 填写后会自动渲染到README.md >三.其他信息下
+|其他参数|其他信息 填写后会自动渲染到README.md >三.其他信息下
 
 
 # 六.将该工具安装为命令行工具 以后可通过复制配置文件 创建项目
