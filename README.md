@@ -26,7 +26,7 @@
 └── test      测试脚本
 ```
 
-# 三.git clone 使用
+# 三.安装使用
 
 ```
 git clone git@github.com:chengcxy/mk_pyproject.git
@@ -38,11 +38,11 @@ python3 gen_json_file.py Bpoint
 查看配置文件 cat /Users/chengxinyao/DataWarehouse/PythonProjects/global_config/Bpoint.json
 ```
 
-# 四.配置文件内容上一步的配置文件Bpoint.json内容如下
+# 四.配置文件内容
 
 ```
 {
-  "project_name": "Bpoint"
+  "project_name": "logstreaming",
   "template_path": "/Users/chengxinyao/DataWarehouse/mk_pyproject/templates",
   "targer_parent_dir": "/Users/chengxinyao/DataWarehouse/PythonProjects",
   "public_folders": [
@@ -67,11 +67,11 @@ python3 gen_json_file.py Bpoint
   "project_desc": "填写项目描述",
   "python_version": "3.5.2"
 }
-
 ```
 
-# 四.配置文件参数
+# 五.配置文件参数
 
+```
 |参数|参数注释
 |---|---
 |project_name|项目名称
@@ -83,16 +83,17 @@ python3 gen_json_file.py Bpoint
 |project_desc|项目描述 填写后会自动渲染到README.md
 |python_version|python版本信息 填写后会自动渲染到README.md
 |其他参数|python版本信息 填写后会自动渲染到README.md >三.其他信息下
+```
 
 # 六.将该工具安装为命令行工具 以后可通过复制配置文件 创建项目
 
 ```
+(1)源码安装:
 git clone git@github.com:chengcxy/mk_pyproject.git
-
 cd 目录/mk_pyproject/bin
 sh build.sh
 此时 已将mk_pyproject模块添加到python 系统模块包路径下
-
+(2)pip install mk-pyproject==0.0.1
 将第三步生成的Bpoint.json 通过命令行工具生成
 mk_pyproject --json_file ~/DataWarehouse/PythonProjects/global_config/Bpoint.json
 ```
